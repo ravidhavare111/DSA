@@ -1,8 +1,12 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class G4_DFS_Algorithm {
+public class temp {
+
 
     public static void DFS(int node, ArrayList<ArrayList<Integer>> graph, int visited[], int parent[] ){
+
+        // visted[node] = 1;
 
         System.out.print(node+" ");
 
