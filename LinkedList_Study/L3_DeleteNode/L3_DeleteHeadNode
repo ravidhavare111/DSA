@@ -1,0 +1,129 @@
+
+class Node{
+    int data;
+    Node next;
+    Node(int data1){
+        this.data=data1;
+        this.next=null;
+    }
+}
+
+public class L3_DeleteHeadNode {
+
+    public static Node createLinkedList(int arr[]){
+        Node head = new Node(arr[0]);
+        Node mover = head;
+        int n = arr.length;
+        for(int i = 1 ; i<n ; i++){
+            Node temp = new Node(arr[i]);
+            mover.next = temp;
+            mover = temp;
+        }
+        return head;
+    }
+
+    public static void print(Node head){
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+    }
+
+    public static Node deleteHeadNode(Node head){
+        if(head == null){
+            return null;
+        }
+        return head.next;
+    }
+
+    public static Node deleteTailNode(Node head){
+        if(head == null){
+            return null;
+        }
+        Node temp = head;
+        while(temp.next.next != null){
+            temp = temp.next;
+        }
+        temp.next = null;
+        return head;
+    }
+
+    public static Node deleteKthNode(Node head, int k){
+        if(head == null){
+            return null;
+        }
+        if(k == 1){
+            return head.next;
+        }
+
+        Node temp = head;
+        Node prev = null;
+        int count = 0;
+        while(temp != null){
+            count++;
+            if(count == k){
+                prev.next = prev.next.next;
+                break;
+            }
+            prev = temp;
+            temp = temp.next;
+        }
+        return head;
+    }
+
+    public static Node deleteNodeWithValue(Node head, int value){
+        if(head == null){
+            return null;
+        }
+        if(head.data == value){
+            return head.next;
+        }
+
+        Node temp = head;
+        Node prev = null;
+        while(temp != null){
+            if(temp.data == value){
+                prev.next = prev.next.next;
+                break;
+            }
+            prev = temp;
+            temp = temp.next;
+        }
+        return head;
+    }
+
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,5};
+
+        Node head = createLinkedList(arr);
+        print(head);
+        System.out.println();
+
+        //Deleting the head node
+        // head = deleteHeadNode(head);
+        // print(head);
+        // System.out.println();
+
+        //Deleting the tail node
+        // head = deleteTailNode(head);
+        // print(head);
+        // System.out.println();
+
+        //Deleting the Node at Kth position
+        // head = deleteKthNode(head, 2);
+        // head = deleteKthNode(head, 4);
+        // print(head);
+        // System.out.println();
+
+        //Deleting the Node which have the value of K
+        // head = deleteNodeWithValue(head, 4);
+        head = deleteNodeWithValue(head, 2);
+        print(head);
+        System.out.println();
+
+
+
+    }
+
+}
