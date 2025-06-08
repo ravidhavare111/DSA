@@ -1,0 +1,5 @@
+package J3_Default_and_Static_Method_in_Interface;
+
+public interface MyInterface {
+
+}

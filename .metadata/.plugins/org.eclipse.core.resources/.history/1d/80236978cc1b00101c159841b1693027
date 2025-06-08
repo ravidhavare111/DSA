@@ -1,0 +1,10 @@
+package J3_Default_and_Static_Method_in_Interface;
+
+public class DefaultMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package J3_Default_and_Static_Method_in_Interface;
+
+interface Parents{
+	static void Print() {                                  // Static method
+		System.out.println("Hello from Print Method from Parent");
+	}
+	
+}
+
+class Childs implements Parent{
+	public void Print(){                   // can't override Print method from parent interface, because print method in Parent is Static
+		System.out.println("Hello from Child");
+	}
+}
+
+
+public class Static_Method {
+	public static void main(String args[]) {
+		
+		Childs childs = new Childs();
+		
+		childs.Print();
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package Main_Method_In_Interface.copy;
+
+public class myCalss {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello from Main method of class");
+
+	}
+
+}

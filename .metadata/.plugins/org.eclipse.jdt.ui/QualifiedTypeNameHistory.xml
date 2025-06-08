@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="J3_Default_and_Static_Method_in_Interface.Parent"/>
+    <fullyQualifiedTypeName name="java.awt.print.Printable"/>
+    <fullyQualifiedTypeName name="J3_Default_and_Static_Method_in_Interface.Child"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.MediaSize.Engineering"/>
+    <fullyQualifiedTypeName name="J4_Lambda_With_Functional_Interface.Employee"/>
+</qualifiedTypeNameHistroy>

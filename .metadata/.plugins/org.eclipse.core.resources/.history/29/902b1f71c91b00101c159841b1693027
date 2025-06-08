@@ -1,0 +1,11 @@
+package J3_Default_and_Static_Method_in_Interface;
+
+@FunctionalInterface
+public interface MyInterface {
+	
+	void Print();
+	
+	public default
+	
+
+}

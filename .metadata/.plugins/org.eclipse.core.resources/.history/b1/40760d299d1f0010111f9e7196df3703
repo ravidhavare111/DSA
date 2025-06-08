@@ -1,0 +1,13 @@
+package J4_Lambda_With_Functional_Interface;
+
+public class myClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Employee Engineer = ()-> {return "Java Developer" ;};
+		
+
+	}
+
+}

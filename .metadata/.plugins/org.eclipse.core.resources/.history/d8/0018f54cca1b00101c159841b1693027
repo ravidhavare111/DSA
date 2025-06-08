@@ -1,0 +1,15 @@
+package J3_Default_and_Static_Method_in_Interface;
+
+@FunctionalInterface
+public interface DefaultMethod {
+	
+	void Sorting();
+	
+	default void Print() {
+		System.out.println("Hello from Default method");
+	}
+}
+
+Class DefaultDemo implements DefaultMethod{
+	
+}

@@ -1,0 +1,34 @@
+package J3_Default_and_Static_Method_in_Interface;
+
+interface Parent {
+	
+	default void Print() {                                                          // Default Method
+		System.out.println("Hello from Default from parents");
+		
+	}
+}
+
+class Child implements Parent{
+	@Override
+	public void Print() {
+		System.out.println("Hello from chind class");
+	}
+	
+	
+}
+
+public class DefaultMethod {
+
+	public static void main(String[] args) {
+		
+		Child baby = new Child();
+		
+		baby.Print();
+		
+		
+		
+		
+
+	}
+
+}

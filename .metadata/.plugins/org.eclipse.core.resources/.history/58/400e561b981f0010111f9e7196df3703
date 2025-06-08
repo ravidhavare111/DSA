@@ -1,0 +1,5 @@
+package Main_Method_In_Interface;
+
+public interface myInterface {
+
+}

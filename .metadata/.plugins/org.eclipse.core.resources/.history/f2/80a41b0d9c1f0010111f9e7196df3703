@@ -1,0 +1,8 @@
+package Main_Method_In_Interface;
+
+public interface myInterface {
+	public static void main(String args[]) {
+		System.out.println("Hello from main method of Interface");
+	}
+
+}
